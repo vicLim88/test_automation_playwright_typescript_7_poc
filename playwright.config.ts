@@ -8,7 +8,9 @@ export default defineConfig({
   reporter: [['list'], ['html', { open: 'never' }]],
   use: {
     baseURL: 'https://www.saucedemo.com',
-    trace: 'on-first-retry',
+    trace: 'on',
+    video: 'on',
+    screenshot: 'on',
   },
   projects: [
     {
@@ -19,3 +21,4 @@ export default defineConfig({
     },
   ],
 });
+
