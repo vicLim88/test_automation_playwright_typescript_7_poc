@@ -26,6 +26,9 @@ jobs:
       - name: Type-check (TS 7 vs TS 6 timing)
         run: npm run compare
 
+      # Video recording needs Playwright's small ffmpeg build (Chrome itself is not downloaded).
+      - run: npx playwright install ffmpeg
+
       - name: Playwright tests
         run: npx playwright test
 
@@ -36,3 +39,4 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 14
+
