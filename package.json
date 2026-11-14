@@ -1,0 +1,30 @@
+{
+  "name": "test_automation_playwright_typescript_7_poc",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "playwright test",
+    "typecheck:ts7": "tsc -p .",
+    "typecheck:ts6": "node node_modules/typescript6/bin/tsc -p .",
+    "compare": "node scripts/compare.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vicLim88/test_automation_playwright_typescript_7_poc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vicLim88/test_automation_playwright_typescript_7_poc/issues"
+  },
+  "homepage": "https://github.com/vicLim88/test_automation_playwright_typescript_7_poc#readme",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2",
+    "typescript6": "npm:typescript@^6.0.3"
+  },
+  "private": true
+}
