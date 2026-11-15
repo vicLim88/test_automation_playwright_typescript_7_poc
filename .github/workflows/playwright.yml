@@ -39,6 +39,9 @@ jobs:
       # Video recording needs Playwright's small ffmpeg build (Chrome itself is not downloaded).
       - run: npx playwright install ffmpeg
 
+      - name: ffmpeg version
+        run: ~/.cache/ms-playwright/ffmpeg-*/ffmpeg-linux -version | head -n 1
+
       - name: Playwright tests
         run: npx playwright test
 
@@ -69,4 +72,5 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
 
